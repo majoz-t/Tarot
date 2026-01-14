@@ -1,0 +1,9 @@
+nav{
+  background-color: #efb8cb;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-nav{
+    color:#a85572
+}

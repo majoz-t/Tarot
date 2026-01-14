@@ -1,13 +1,13 @@
+import React from 'react'
+import Layout from './layout/Layout'
 
-import Footer from "./components/footer/Footer";
 
-function App() {
+const App = () => {
   return (
     <>
-      {/* contenido */}
-      <Footer />
+        <Layout/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
