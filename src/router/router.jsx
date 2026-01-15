@@ -1,46 +1,26 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Discover from "../pages/discover/Discover";
-import Record from "../pages/record/Record";
 import Save from "../pages/save/Save";
 import Layout from "../layout/Layout";
-import { Children } from "react";
-
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component:Layout,
-    children:[
-     {
+    element: <Layout />, 
+    children: [
+      {
         index: true,
-        Component:Home
+        element: <Home />
       },
       {
-        path: "/discover",
-        Component:Discover 
+        path: "discover",
+        element: <Discover />
       },
       {
-        path: "/record",
-        Component:Record 
-      },
-      {
-        path: "/save",
-        Component:Save 
-      }  
+        path: "save",
+        element: <Save />
+      }
     ]
-    
-  },
-    {
-    path: "/dicover",
-    Component:Discover
-  },
-    {
-    path: "/record",
-    Component:Record 
-  },
-     {
-    path: "/save",
-    Component:Save 
   }
 ]);
