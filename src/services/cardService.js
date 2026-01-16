@@ -16,9 +16,9 @@ export const getSakuraCards = async () => {
 };
 
 export const getSakuraCardById = async (id) => {
-  const response = api.get(
-    'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/${id}'
+  const response = await api.get(
+    `https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/${id}`
   );
-  // console.log(response)
+
   return response.data;
 };
