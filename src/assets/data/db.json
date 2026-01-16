@@ -1,0 +1,19 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "name": "The Fool",
+      "arcana": "Major",
+      "image": "/images/fool.jpg",
+      "meaning": "Inicios, inocencia, espontaneidad."
+    },
+    {
+      "id": "2",
+      "name": "The Magician",
+      "arcana": "Major",
+      "image": "/images/magician.jpg",
+      "meaning": "Manifestación, poder, acción."
+    }
+  ],
+  "readings": []
+}
