@@ -1,0 +1,21 @@
+.card {
+  position: absolute;
+  width: 120px;
+  height: 180px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -60px;
+  transform-origin: bottom center;
+  transition: transform 0.35s ease, opacity 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-30px) scale(1.08) rotate(0deg);
+  z-index: 50;
+}
+
+.card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
